@@ -4,7 +4,7 @@ import "./navbar.css";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar-mine bg-black bg-opacity-10 backdrop-blur-3xl blur-[0.7px]">
+      <nav className="navbar-mine bg-black bg-opacity-10 backdrop-blur-3xl blur-[0.3px]">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="#"
@@ -53,7 +53,7 @@ const Navbar = () => {
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:text-[#676565] hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#676565] md:p-0 dark:text-black  dark:hover:bg-gray-700  md:dark:hover:bg-transparent"
                 >
-                  Services
+                  Documentations
                 </a>
               </li>
               <li>
@@ -61,16 +61,15 @@ const Navbar = () => {
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#676565] md:p-0 dark:text-black  dark:hover:bg-gray-700  md:dark:hover:bg-transparent"
                 >
-                  Pricing
+                  Paired-Coding
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#676565] md:p-0 dark:text-black  dark:hover:bg-gray-700  md:dark:hover:bg-transparent"
-                >
-                  Contact
-                </a>
+                <input
+                  type="button"
+                  value="Dashboard"
+                  className="block py-[0.8px] px-3 bg-green-600 rounded hover:bg-green-700 transition-all cursor-pointer hover:text-white"
+                />
               </li>
             </ul>
           </div>

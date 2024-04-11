@@ -12,7 +12,7 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-          <ul className="flex flex-wrap items-center mt-3 text-md font-medium text-white">
+          <ul className="flex flex-wrap items-center mt-2 text-sm  font-medium text-white">
             <li>
               <a href="#" className="hover:underline me-4 md:me-6 text-white">
                 About

@@ -1,6 +1,9 @@
 import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const MiddlePart = () => {
+  const { loginWithRedirect } = useAuth0();
+
   return (
     <>
       <div className="middlePart">
@@ -19,6 +22,7 @@ const MiddlePart = () => {
             </h4>
             <input
               type="button"
+              onClick={loginWithRedirect}
               value="Get Started!"
               className="py-2 px-4 transition-all mt-4 bg-[#a61919] hover:bg-[#621f1f] text-white rounded hover:cursor-pointer"
               style={{ fontFamily: "Poppins" }}
