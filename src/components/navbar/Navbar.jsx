@@ -68,7 +68,7 @@ const Navbar = () => {
                 <input
                   type="button"
                   value="Dashboard"
-                  className="block py-[0.8px] px-3 bg-green-600 rounded hover:bg-green-700 transition-all cursor-pointer hover:text-white"
+                  className="block py-[0.8px] px-3 bg-green-600 rounded hover:bg-green-700 transition-all cursor-none hover:text-white"
                 />
               </li>
             </ul>

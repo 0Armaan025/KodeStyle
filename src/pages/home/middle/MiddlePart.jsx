@@ -24,7 +24,7 @@ const MiddlePart = () => {
               type="button"
               onClick={loginWithRedirect}
               value="Get Started!"
-              className="py-2 px-4 transition-all mt-4 bg-[#a61919] hover:bg-[#621f1f] text-white rounded hover:cursor-pointer"
+              className="py-2 px-4 transition-all mt-4 bg-[#a61919] hover:bg-[#621f1f] text-white rounded hover:cursor-none"
               style={{ fontFamily: "Poppins" }}
             />
           </div>
@@ -73,7 +73,7 @@ const MiddlePart = () => {
             type="button"
             style={{ fontFamily: "Poppins" }}
             value="Try the API!"
-            className="px-4 py-2 bg-[#221b89] text-white hover:bg-[#1c194b] cursor-pointer rounded transition-all"
+            className="px-4 py-2 bg-[#221b89] text-white hover:bg-[#1c194b] cursor-none rounded transition-all"
           />
           <br />
           <br />

@@ -8,3 +8,10 @@ background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-2
 background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+html {
+    --cursor-color: #333
+  }
+  
+  html.dark-mode {
+    --cursor-color: #fff
+  }
