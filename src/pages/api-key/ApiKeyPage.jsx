@@ -17,6 +17,12 @@ const APIKeyPage = () => {
     { apiKey: "ghi345rst678", timestamp: "2022-04-13 08:45:00" },
   ]);
 
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const handleChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   const notify = () => {
     toast("Wow so easy!");
     setIsModalOpen(true);
@@ -61,6 +67,7 @@ const APIKeyPage = () => {
               />
             ))}
           </div>
+          <br />
         </div>
       </div>
       <ToastContainer />

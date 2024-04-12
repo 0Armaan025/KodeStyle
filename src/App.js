@@ -24,7 +24,7 @@ function App() {
           backgroundColor: "var(--cursor-color)",
         }}
       />
-      <APIKeyPage />
+      <CreateDocsPage />
     </>
   );
 }

@@ -6,11 +6,11 @@ import Footer from "../../components/footer/Footer";
 import { useState } from "react";
 
 const SocialMediaManager = () => {
-  const [selectedOption, setSelectedOption] = useState("");
+const [selectedOption, setSelectedOption] = useState("");
 
-  const handleChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
+const handleChange = (event) => {
+  setSelectedOption(event.target.value);
+};
 
   return (
     <>
