@@ -27,12 +27,11 @@ const DashboardSideBar = () => {
           <h3>Code Analysis!</h3>
         </div>
         <hr className="border-gray-500 w-[100%] my-2" />
-
         <div
-          className="item p-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none"
+          className="item py-2  px-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none mt-2 items-start justify-start"
           style={{ fontFamily: "Poppins" }}
         >
-          <h3>Social Media Management!</h3>
+          <h3>Pull requests summarizer!!</h3>
         </div>
         <hr className="border-gray-500 w-[100%] my-2" />
 
@@ -40,7 +39,16 @@ const DashboardSideBar = () => {
           className="item p-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none"
           style={{ fontFamily: "Poppins" }}
         >
-          <h3>Insights!</h3>
+          <h3>Social Media Management!</h3>
+        </div>
+
+        <hr className="border-gray-500 w-[100%] my-2" />
+
+        <div
+          className="item py-2  px-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none mt-2 items-start justify-start"
+          style={{ fontFamily: "Poppins" }}
+        >
+          <h3>Docs Summarizer!</h3>
         </div>
         <hr className="border-gray-500 w-[100%] my-2" />
 

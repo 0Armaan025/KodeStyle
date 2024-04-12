@@ -1,0 +1,13 @@
+.custom-modal {
+  z-index: 9999;
+}
+
+
+
+.custom-modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px; /* Adjust the width as needed */
+}

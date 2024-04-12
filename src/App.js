@@ -1,8 +1,12 @@
 import "./index.css";
+import CodeAnalyserPage from "./pages/code-analyser/CodeAnalyserPage";
 import CreateDocsPage from "./pages/create-docs/CreateDocsPage";
 import DashboardPage from "./pages/dashboard/DashboardPage";
 import HomePage from "./pages/home/HomePage";
 import AnimatedCursor from "react-animated-cursor";
+import SocialMediaManager from "./pages/social-media-manager/SocialMediaManager";
+import DocsSummarizerPage from "./pages/docs-summarizer/DocsSummarizerPage";
+import APIKeyPage from "./pages/api-key/ApiKeyPage";
 
 function App() {
   return (
@@ -20,7 +24,7 @@ function App() {
           backgroundColor: "var(--cursor-color)",
         }}
       />
-      <CreateDocsPage />
+      <APIKeyPage />
     </>
   );
 }
