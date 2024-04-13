@@ -1,9 +1,37 @@
-import React from "react";
+import { addDoc, collection, doc, getDoc, setDoc } from "@firebase/firestore";
+import { firestore } from "../../../firebase_setup/firebase";
+import { Link, redirect } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Link } from "react-router-dom";
 
 const MiddlePart = () => {
-  const { loginWithRedirect } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, user } = useAuth0();
+
+  const handleSubmit = async () => {
+    if (!isAuthenticated) {
+      loginWithRedirect();
+      return;
+    }
+
+    // Ensure the document ID is correctly specified
+    const userDocRef = doc(firestore, "users", user.name);
+
+    try {
+      const userDocSnapshot = await getDoc(userDocRef);
+
+      if (!userDocSnapshot.exists()) {
+        const userData = {
+          name: user.name,
+        };
+
+        // Use setDoc to ensure the document ID is correctly specified
+        await setDoc(userDocRef, userData);
+      }
+      // Redirect the user to the dashboard
+      window.location.href = "http://localhost:3000/dashboard";
+    } catch (error) {
+      console.error("Error creating user document: ", error);
+    }
+  };
 
   return (
     <>
@@ -23,9 +51,10 @@ const MiddlePart = () => {
               epitomizes efficiency and elegance in development workflows,
               enhancing productivity and presentation.
             </h4>
+
             <input
               type="button"
-              onClick={loginWithRedirect}
+              onClick={handleSubmit}
               value="Get Started!"
               className="py-2 px-4 transition-all mt-4 bg-[#a61919] hover:bg-[#621f1f] text-white rounded hover:cursor-none"
               style={{ fontFamily: "Poppins" }}
@@ -73,14 +102,15 @@ const MiddlePart = () => {
             className="rounded-lg"
           />
           <br />
-          <Link to="/apis-manager">
-            <input
-              type="button"
-              style={{ fontFamily: "Poppins" }}
-              value="Try the API!"
-              className="px-4 py-2 bg-[#221b89] text-white hover:bg-[#1c194b] cursor-none rounded transition-all"
-            />
-          </Link>
+
+          <input
+            type="button"
+            onClick={handleSubmit}
+            style={{ fontFamily: "Poppins" }}
+            value="Try the API!"
+            className="px-4 py-2 bg-[#221b89] text-white hover:bg-[#1c194b] cursor-none rounded transition-all"
+          />
+
           <br />
           <br />
         </center>

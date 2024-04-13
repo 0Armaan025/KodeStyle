@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
+
 const DocumentationsPage = () => {
   return (
     <>
@@ -83,6 +84,8 @@ def send_request(repo_url, tone, description, github_token, api_key):
 		
 	response = requests.post(endpoint, json=payload, headers=headers)
 	return response.text
+
+output = send_request(repo_url="url_here", tone="formal", description="description here",github_token="",api_key="your api key here")    
 `}
             </code>
             <CopyToClipboard
@@ -94,7 +97,7 @@ def send_request(repo_url, tone, description, github_token, api_key):
             </CopyToClipboard>
           </pre>
         </section>
-        // Section 2
+        
         <section className="mb-8">
           <h2
             className="text-xl font-bold mb-2"
@@ -110,7 +113,7 @@ def send_request(repo_url, tone, description, github_token, api_key):
             .
           </p>
         </section>
-        // Section 3
+        
         <section>
           <h2
             className="text-xl font-bold mb-2"
@@ -138,6 +141,8 @@ def send_request(code, api_key):
     
   response = requests.post(endpoint, json=payload, headers=headers)
   return response.text
+
+output = send_request(code="code here", api_key="api key here")  
 `}
             </code>
             <CopyToClipboard
@@ -150,7 +155,7 @@ def send_request(code, api_key):
           </pre>
         </section>
         <br />
-        // Section 4
+        
         <section className="mb-8">
           <h2
             className="text-xl font-bold mb-2"
@@ -166,7 +171,7 @@ def send_request(code, api_key):
             .
           </p>
         </section>
-        // Section 5
+        
         <section>
           <h2
             className="text-xl font-bold mb-2"
@@ -197,6 +202,8 @@ def send_request(repo_url, tone, github_token, description, api_key):
     
   response = requests.post(endpoint, json=payload, headers=headers)
   return response.text
+
+output = send_request(repo_url="url", tone="formal", github_token="token here", description="description", api_key="api_key_here")
 `}
             </code>
             <CopyToClipboard
