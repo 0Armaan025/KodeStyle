@@ -8,30 +8,30 @@ const DocsSummarizerPage = () => {
   return (
     <>
       <Navbar />
-      <div className="dashboardPage flex flex-row items-start">
+      <div className="dashboardPage flex flex-col md:flex-row items-start">
         <DashboardSideBar />
-        <div className="codeAnalyserPage mt-8 ml-16">
+        <div className="codeAnalyserPage mt-8 ml-16 md:ml-0 md:mr-8 flex flex-col">
           <h3 className="text-3xl" style={{ fontFamily: "Poppins" }}>
             Let's summarize some coding docs!
           </h3>
           <br />
-          <label className=" text-xl">Please paste the docs link here:</label>
+          <label className="text-xl">Please paste the docs link here:</label>
 
           <br />
           <input
             type="text"
             placeholder="link here"
-            className="p-2 w-[300px] mt-4 outline-none rounded-sm"
+            className="p-2 w-full md:w-[300px] mt-4 outline-none rounded-sm"
           />
           <br />
           <br />
-          <label className=" text-xl">Please input your prompt: </label>
+          <label className="text-xl">Please input your prompt: </label>
 
           <br />
           <input
             type="text"
             placeholder="prompt to do with the docs"
-            className="p-2 w-[300px] mt-4 outline-none rounded-sm"
+            className="p-2 w-full md:w-[300px] mt-4 outline-none rounded-sm"
           />
           <br />
           <br />

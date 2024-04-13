@@ -63,26 +63,23 @@ const SocialMediaManager = () => {
   return (
     <>
       <Navbar />
-      <div className="dashboardPage flex flex-row justify-start items-start ">
+      <div className="dashboardPage flex flex-col md:flex-row items-start">
         <DashboardSideBar />
-        <div className="createDocsPage mt-8 ml-16">
-          <h2 style={{ fontFamily: "Poppins" }} className="text-3xl">
+        <div className="createDocsPage mt-8 ml-16 md:ml-0 md:mr-8 flex flex-col">
+          <h2 className="text-3xl" style={{ fontFamily: "Poppins" }}>
             🔥 Let's let more people know about your amazing CREATION! ✨
           </h2>
-          <br />
           <label className="ml-4 text-xl">
-            Please enter your github repo link:
+            Please enter your GitHub repo link:
           </label>
-          <br />
           <input
             type="text"
-            placeholder="Your github repo link"
+            placeholder="Your GitHub repo link"
             name="repoUrl"
             value={repoUrl}
             onChange={handleChange}
-            className="ml-4 px-2 py-2 w-[350px] mt-4 outline-none rounded-sm"
+            className="ml-4 px-2 py-2 w-full md:w-[350px] mt-4 outline-none rounded-sm"
           />
-          <br />
           <br />
           <label className="ml-4 font-bold" style={{ fontFamily: "Poppins" }}>
             Choose a tone:
@@ -102,20 +99,16 @@ const SocialMediaManager = () => {
               Emojified and Informal!
             </option>
           </select>
-          <br />
-          <br />
           <label className="ml-4 text-xl">
             Please enter a short description here:
           </label>
-          <br />
           <textarea
             placeholder="A short description here would work amazingly!"
             name="description"
             value={description}
             onChange={handleChange}
-            className="ml-4 p-4 w-[22rem] h-52 mt-4 outline-none rounded-lg"
+            className="ml-4 p-4 w-full md:w-[22rem] h-52 mt-4 outline-none rounded-lg"
           />
-          <br />
           <input
             type="button"
             value="Magic! ✨"
@@ -124,33 +117,28 @@ const SocialMediaManager = () => {
             className="ml-4 mt-4 w-[150px] rounded-sm hover:bg-[#642222] cursor-pointer bg-[#e13232] text-white px-2 py-2 text-center"
             style={{ fontFamily: "Poppins" }}
           />
-          <br />
-          <br />
           <textarea
             placeholder="Your generated post will be here!"
             value={generatedPost}
-            readOnly
-            className="ml-4 p-4 w-[22rem] h-40 outline-none rounded-lg"
+            className="ml-4 p-4 w-full md:w-[22rem] h-40 outline-none rounded-lg mt-4"
           />
-          <br />
-          <div className="buttonsRow ml-4 flex flex-row justify-evenly w-[22rem]">
+          <div className="buttonsRow ml-4 flex flex-col md:flex-row justify-evenly mt-4  mb-4 w-full md:w-[22rem]">
             <input
               type="button"
               value="Re-generate :("
               onClick={handleMagic}
-              className="py-2 px-2 rounded-sm text-white bg-[rgb(123,12,12)] transition-all hover:bg-[rgb(61,19,19)] w-[100%] mr-2"
+              className="py-2 px-2 rounded-sm text-white bg-[rgb(123,12,12)] transition-all hover:bg-[rgb(61,19,19)] w-full md:w-auto md:mr-2"
             />
             <input
               onClick={handleShareTwitter}
               type="button"
               value="Share it!"
               style={{ fontFamily: "Poppins" }}
-              className="py-2 px-2 rounded-sm text-white font-bold bg-[#1383ac] transition-all hover:bg-[#246c87] w-[100%]"
+              className="py-2 px-2 rounded-sm text-white font-bold bg-[#1383ac] transition-all hover:bg-[#246c87] w-full md:w-auto"
             />
           </div>
         </div>
       </div>
-      <br />
       <Footer />
     </>
   );

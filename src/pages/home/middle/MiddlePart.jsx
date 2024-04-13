@@ -17,9 +17,11 @@ const MiddlePart = () => {
               KodeStyle
             </h2>
             <h4 className="w-full md:w-[30rem] mb-5">
-              Ullamco quis sit dolor sint esse aliquip aliqua elit do. Labore
-              veniam duis esse quis ad cillum esse in aliquip dolor sint aliqua
-              elit nostrud. Ut ex proident proident culpa id.
+              KodeStyle streamlines GitHub README and documentation creation
+              with AI, simplifies social media posts, provides customizable
+              APIs, and offers code analysis and documentation summarization. It
+              epitomizes efficiency and elegance in development workflows,
+              enhancing productivity and presentation.
             </h4>
             <input
               type="button"
@@ -56,12 +58,13 @@ const MiddlePart = () => {
             className="w-full md:w-[50rem] text-sm"
             style={{ fontFamily: "Poppins" }}
           >
-            AI-Generated documentations refactorisation -&gt; Real-time docs
-            editing -&gt; Code Analysis -&gt; flow-charts and image pattern
-            recognition for code -&gt; api to use this platform -&gt; speech to
-            text for coders with a strong will! -&gt; repos analysis and core
-            -&gt; ai social media updates idea summarizer and a lot more! and
-            All for <span className="text-yellow-500 text-lg"> FREE! 🥳</span>
+            (Work in progress) AI-Generated documentations refactorisation -&gt;
+            Real-time docs editing -&gt; Code Analysis -&gt; flow-charts and
+            image pattern recognition for code -&gt; api to use this platform
+            -&gt; speech to text for coders with a strong will! -&gt; repos
+            analysis and core -&gt; ai social media updates idea summarizer and
+            a lot more! and All for{" "}
+            <span className="text-yellow-500 text-lg"> FREE! 🥳</span>
           </h3>
           <br />
           <img

@@ -8,6 +8,7 @@ import SocialMediaManager from "./pages/social-media-manager/SocialMediaManager"
 import DocsSummarizerPage from "./pages/docs-summarizer/DocsSummarizerPage";
 import APIKeyPage from "./pages/api-key/ApiKeyPage";
 import { Route, Routes } from "react-router-dom";
+import DocumentationsPage from "./pages/documentations/DocumentationsPage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/readme-creator" element={<CreateDocsPage />} />
         <Route path="/social-media-manager" element={<SocialMediaManager />} />
         <Route path="/apis-manager" element={<APIKeyPage />} />
+        <Route path="/documentations" element={<DocumentationsPage />} />
       </Routes>
     </>
   );
