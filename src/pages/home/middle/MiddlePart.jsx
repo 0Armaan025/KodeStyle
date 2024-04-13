@@ -1,5 +1,6 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from "react-router-dom";
 
 const MiddlePart = () => {
   const { loginWithRedirect } = useAuth0();
@@ -69,12 +70,14 @@ const MiddlePart = () => {
             className="rounded-lg"
           />
           <br />
-          <input
-            type="button"
-            style={{ fontFamily: "Poppins" }}
-            value="Try the API!"
-            className="px-4 py-2 bg-[#221b89] text-white hover:bg-[#1c194b] cursor-none rounded transition-all"
-          />
+          <Link to="/apis-manager">
+            <input
+              type="button"
+              style={{ fontFamily: "Poppins" }}
+              value="Try the API!"
+              className="px-4 py-2 bg-[#221b89] text-white hover:bg-[#1c194b] cursor-none rounded transition-all"
+            />
+          </Link>
           <br />
           <br />
         </center>

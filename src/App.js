@@ -7,6 +7,7 @@ import AnimatedCursor from "react-animated-cursor";
 import SocialMediaManager from "./pages/social-media-manager/SocialMediaManager";
 import DocsSummarizerPage from "./pages/docs-summarizer/DocsSummarizerPage";
 import APIKeyPage from "./pages/api-key/ApiKeyPage";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -24,7 +25,15 @@ function App() {
           backgroundColor: "var(--cursor-color)",
         }}
       />
-      <CreateDocsPage />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/code-analysis" element={<CodeAnalyserPage />} />
+        <Route path="/docs-summarizer" element={<DocsSummarizerPage />} />
+        <Route path="/readme-creator" element={<CreateDocsPage />} />
+        <Route path="/social-media-manager" element={<SocialMediaManager />} />
+        <Route path="/apis-manager" element={<APIKeyPage />} />
+      </Routes>
     </>
   );
 }

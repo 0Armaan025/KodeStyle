@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DashboardSideBar = () => {
   return (
@@ -17,21 +18,19 @@ const DashboardSideBar = () => {
           className="item py-2 px-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none mt-2 items-start "
           style={{ fontFamily: "Poppins" }}
         >
-          <h3>Create Docs/READMEs!</h3>
+          <Link to="/readme-creator">
+            <h3>Create Docs/READMEs!</h3>
+          </Link>
         </div>
         <hr className="border-gray-500 w-[100%] my-2" />
+
         <div
           className="item py-2  px-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none mt-2 items-start justify-start"
           style={{ fontFamily: "Poppins" }}
         >
-          <h3>Code Analysis!</h3>
-        </div>
-        <hr className="border-gray-500 w-[100%] my-2" />
-        <div
-          className="item py-2  px-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none mt-2 items-start justify-start"
-          style={{ fontFamily: "Poppins" }}
-        >
-          <h3>Pull requests summarizer!!</h3>
+          <Link to="/code-analysis">
+            <h3>Code Analysis!</h3>
+          </Link>
         </div>
         <hr className="border-gray-500 w-[100%] my-2" />
 
@@ -39,7 +38,9 @@ const DashboardSideBar = () => {
           className="item p-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none"
           style={{ fontFamily: "Poppins" }}
         >
-          <h3>Social Media Management!</h3>
+          <Link to="/social-media-manager">
+            <h3>Social Media Management!</h3>
+          </Link>
         </div>
 
         <hr className="border-gray-500 w-[100%] my-2" />
@@ -48,7 +49,9 @@ const DashboardSideBar = () => {
           className="item py-2  px-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none mt-2 items-start justify-start"
           style={{ fontFamily: "Poppins" }}
         >
-          <h3>Docs Summarizer!</h3>
+          <Link to="/docs-summarizer">
+            <h3>Docs Summarizer!</h3>
+          </Link>
         </div>
         <hr className="border-gray-500 w-[100%] my-2" />
 
@@ -56,7 +59,9 @@ const DashboardSideBar = () => {
           className="item p-2 hover:bg-[#fff] w-[10rem] transition-all cursor-none"
           style={{ fontFamily: "Poppins" }}
         >
-          <h3>API Key!</h3>
+          <Link to="/apis-manager">
+            <h3>API Key!</h3>
+          </Link>
         </div>
         <hr className="border-gray-500 w-[100%] my-2" />
 

@@ -25,18 +25,24 @@ const DocsSummarizerPage = () => {
           />
           <br />
           <br />
+          <label className=" text-xl">Please input your prompt: </label>
+
+          <br />
+          <input
+            type="text"
+            placeholder="prompt to do with the docs"
+            className="p-2 w-[300px] mt-4 outline-none rounded-sm"
+          />
+          <br />
+          <br />
           <h3 className="text-2xl" style={{ fontFamily: "Poppins" }}>
             Docs Review🤓:
           </h3>
           <br />
           <h2>
-            Do consectetur do exercitation quis dolor culpa anim. Deserunt Lorem
-            sunt veniam reprehenderit ex incididunt magna consectetur laboris
-            incididunt reprehenderit mollit aliquip pariatur. Aliquip laboris
-            laboris nisi labore laborum. Nulla excepteur laborum commodo
-            pariatur nostrud officia anim adipisicing ullamco cillum fugiat esse
-            irure. Labore sit in sint minim elit aliqua officia laborum dolor
-            non aute minim ipsum esse.
+            This feature is in progress, it has not been completed yet due to
+            6144 characters limitation, I'm unable to scrape and process the
+            whole data of the docs.
           </h2>
           <br />
         </div>

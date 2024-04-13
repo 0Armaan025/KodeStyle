@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">
-              KodeStyle
+              <Link to="/">KodeStyle</Link>
             </span>
           </a>
           <button
@@ -58,11 +59,14 @@ const Navbar = () => {
               </li>
 
               <li>
-                <input
-                  type="button"
-                  value="Dashboard"
-                  className="block py-[0.8px] px-3 bg-green-600 rounded hover:bg-green-700 transition-all cursor-none hover:text-white"
-                />
+                {" "}
+                <Link to="/dashboard">
+                  <input
+                    type="button"
+                    value="Dashboard"
+                    className="block py-[0.8px] px-3 bg-green-600 rounded hover:bg-green-700 transition-all cursor-none hover:text-white"
+                  />
+                </Link>
               </li>
             </ul>
           </div>
