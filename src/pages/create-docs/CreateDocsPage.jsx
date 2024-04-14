@@ -13,7 +13,7 @@ const CreateDocsPage = () => {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/readme_creator",
+        "https://manual-lina-none-new.koyeb.app/readme_creator",
         {
           repo_url: repoUrl,
           description: description,
