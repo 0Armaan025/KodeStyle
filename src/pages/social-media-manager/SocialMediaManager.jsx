@@ -44,7 +44,7 @@ const SocialMediaManager = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://127.0.0.1:5000/get_social_media_post",
+        "https://manual-lina-none-new.koyeb.app/get_social_media_post",
         {
           repo_url: repoUrl,
           tone: tone,
