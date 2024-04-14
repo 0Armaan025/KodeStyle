@@ -27,7 +27,7 @@ const MiddlePart = () => {
         await setDoc(userDocRef, userData);
       }
       // Redirect the user to the dashboard
-      window.location.href = "http://localhost:3000/readme-creator";
+      window.location.href = "https://kode-style.vercel.app/readme-creator";
     } catch (error) {
       console.error("Error creating user document: ", error);
     }
