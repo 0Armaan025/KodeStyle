@@ -54,7 +54,7 @@ const APIKeyPage = () => {
     try {
       // Send a POST request to the backend server to generate the API key
       const response = await axios.get(
-        "http://127.0.0.1:5000/generate_api_key" + "?name=" + user.name
+        "https://manual-lina-none-new.koyeb.app/generate_api_key" + "?name=" + user.name
       );
 
       // Extract the API key from the response
