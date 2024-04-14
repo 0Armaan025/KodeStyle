@@ -13,7 +13,7 @@ const CodeAnalyserPage = () => {
   const handleAnalyseCode = async () => {
     try {
       setLoading(true);
-      const response = await axios.post("http://127.0.0.1:5000/analyse_code", {
+      const response = await axios.post("https://manual-lina-none-new.koyeb.app/analyse_code", {
         code: code,
       });
       setExplanation(response.data.analysis);
