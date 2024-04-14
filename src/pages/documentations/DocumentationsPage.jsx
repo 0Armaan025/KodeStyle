@@ -3,7 +3,6 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-
 const DocumentationsPage = () => {
   return (
     <>
@@ -82,14 +81,14 @@ def send_request(repo_url, tone, description, github_token, api_key):
 		"github_token": github_token,
 	}
 		
-	response = requests.post(endpoint, json=payload, headers=headers)
+	response = requests.post(endpoint, files=payload, headers=headers)
 	return response.text
 
 output = send_request(repo_url="url_here", tone="formal", description="description here",github_token="",api_key="your api key here")    
 `}
             </code>
             <CopyToClipboard
-              text={`import requests\n\ndef send_request(repo_url, tone, description, github_token, api_key):\n\tendpoint = "http://127.0.0.1:5000/create_readme"\n\theaders = {\n\t\t"Content-Type": "application/json",\n\t\t'Authorization': f'Bearer {api_key}'\n\t}\n\tpayload = {\n\t\t"repo_url": repo_url,\n\t\t"tone": tone,\n\t\t"description": description,\n\t\t"github_token": github_token,\n\t}\n\tresponse = requests.post(endpoint, json=payload, headers=headers)\n\treturn response.text\n`}
+              text={`import requests\n\ndef send_request(repo_url, tone, description, github_token, api_key):\n\tendpoint = "http://127.0.0.1:5000/create_readme"\n\theaders = {\n\t\t"Content-Type": "application/json",\n\t\t'Authorization': f'Bearer {api_key}'\n\t}\n\tpayload = {\n\t\t"repo_url": repo_url,\n\t\t"tone": tone,\n\t\t"description": description,\n\t\t"github_token": github_token,\n\t}\n\tresponse = requests.post(endpoint, files=payload, headers=headers)\n\treturn response.text\n`}
             >
               <button className="absolute top-2 right-2 bg-gray-200 text-gray-600 px-2 py-1 rounded-md hover:bg-gray-300">
                 Copy
@@ -97,7 +96,7 @@ output = send_request(repo_url="url_here", tone="formal", description="descripti
             </CopyToClipboard>
           </pre>
         </section>
-        
+
         <section className="mb-8">
           <h2
             className="text-xl font-bold mb-2"
@@ -113,7 +112,7 @@ output = send_request(repo_url="url_here", tone="formal", description="descripti
             .
           </p>
         </section>
-        
+
         <section>
           <h2
             className="text-xl font-bold mb-2"
@@ -139,14 +138,14 @@ def send_request(code, api_key):
     "code": code,
   }
     
-  response = requests.post(endpoint, json=payload, headers=headers)
+  response = requests.post(endpoint, files=payload, headers=headers)
   return response.text
 
 output = send_request(code="code here", api_key="api key here")  
 `}
             </code>
             <CopyToClipboard
-              text={`import requests\n\ndef send_request(code, api_key):\n  endpoint = "http://127.0.0.1:5000/analyse_code"\n  headers = {\n    "Content-Type": "application/json",\n    'Authorization': f'Bearer {api_key}'\n  }\n  payload = {\n    "code": code,\n  }\n  response = requests.post(endpoint, json=payload, headers=headers)\n  return response.text\n`}
+              text={`import requests\n\ndef send_request(code, api_key):\n  endpoint = "http://127.0.0.1:5000/analyse_code"\n  headers = {\n    "Content-Type": "application/json",\n    'Authorization': f'Bearer {api_key}'\n  }\n  payload = {\n    "code": code,\n  }\n  response = requests.post(endpoint, files=payload, headers=headers)\n  return response.text\n`}
             >
               <button className="absolute top-2 right-2 bg-gray-200 text-gray-600 px-2 py-1 rounded-md hover:bg-gray-300">
                 Copy
@@ -155,7 +154,7 @@ output = send_request(code="code here", api_key="api key here")
           </pre>
         </section>
         <br />
-        
+
         <section className="mb-8">
           <h2
             className="text-xl font-bold mb-2"
@@ -171,7 +170,7 @@ output = send_request(code="code here", api_key="api key here")
             .
           </p>
         </section>
-        
+
         <section>
           <h2
             className="text-xl font-bold mb-2"
@@ -200,14 +199,14 @@ def send_request(repo_url, tone, github_token, description, api_key):
     "description": description
   }
     
-  response = requests.post(endpoint, json=payload, headers=headers)
+  response = requests.post(endpoint, files=payload, headers=headers)
   return response.text
 
 output = send_request(repo_url="url", tone="formal", github_token="token here", description="description", api_key="api_key_here")
 `}
             </code>
             <CopyToClipboard
-              text={`import requests\n\ndef send_request(repo_url, tone, github_token, description, api_key):\n  endpoint = "http://127.0.0.1:5000/analyse_code"\n  headers = {\n    "Content-Type": "application/json",\n    'Authorization': f'Bearer {api_key}'\n  }\n  payload = {\n    "repo_url": repo_url,\n    "tone": tone,\n    "github_token": github_token,\n    "description": description\n  }\n  response = requests.post(endpoint, json=payload, headers=headers)\n  return response.text\n`}
+              text={`import requests\n\ndef send_request(repo_url, tone, github_token, description, api_key):\n  endpoint = "http://127.0.0.1:5000/analyse_code"\n  headers = {\n    "Content-Type": "application/json",\n    'Authorization': f'Bearer {api_key}'\n  }\n  payload = {\n    "repo_url": repo_url,\n    "tone": tone,\n    "github_token": github_token,\n    "description": description\n  }\n  response = requests.post(endpoint, files=payload, headers=headers)\n  return response.text\n`}
             >
               <button className="absolute top-2 right-2 bg-gray-200 text-gray-600 px-2 py-1 rounded-md hover:bg-gray-300">
                 Copy

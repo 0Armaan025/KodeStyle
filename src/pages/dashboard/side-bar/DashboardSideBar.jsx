@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const DashboardSideBar = () => {
+  const { logout } = useAuth0();
+
   return (
     <div
       className="dashboardSideBar w-[10rem]  blur-[0.3px] flex flex-col justify-center items-start mt-0"
@@ -79,6 +82,9 @@ const DashboardSideBar = () => {
 
           <hr className="border-black border-1 w-[100%]" />
           <div
+            onClick={() =>
+              logout({ logoutParams: { returnTo: window.location.origin } })
+            }
             className="item p-2 hover:bg-[#8e2525] w-[10rem] hover:text-white transition-all cursor-none"
             style={{ fontFamily: "Poppins" }}
           >
