@@ -27,7 +27,7 @@ const MiddlePart = () => {
         await setDoc(userDocRef, userData);
       }
       // Redirect the user to the dashboard
-      window.location.href = "http://localhost:3000/dashboard";
+      window.location.href = "http://localhost:3000/readme-creator";
     } catch (error) {
       console.error("Error creating user document: ", error);
     }

@@ -60,7 +60,7 @@ const Navbar = () => {
 
               <li>
                 {" "}
-                <Link to="/dashboard">
+                <Link to="/readme-creator">
                   <input
                     type="button"
                     value="Dashboard"
