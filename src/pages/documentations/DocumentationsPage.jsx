@@ -68,7 +68,7 @@ import requests
 
 def send_request(repo_url, tone, description, github_token, api_key):
 	
-	endpoint = "http://127.0.0.1:5000/create_readme"
+	endpoint = "https://manual-lina-none-new.koyeb.app/create_readme"
 
 	headers = {
 		"Content-Type": "application/json",
@@ -88,7 +88,7 @@ output = send_request(repo_url="url_here", tone="formal", description="descripti
 `}
             </code>
             <CopyToClipboard
-              text={`import requests\n\ndef send_request(repo_url, tone, description, github_token, api_key):\n\tendpoint = "http://127.0.0.1:5000/create_readme"\n\theaders = {\n\t\t"Content-Type": "application/json",\n\t\t'Authorization': f'Bearer {api_key}'\n\t}\n\tpayload = {\n\t\t"repo_url": repo_url,\n\t\t"tone": tone,\n\t\t"description": description,\n\t\t"github_token": github_token,\n\t}\n\tresponse = requests.post(endpoint, files=payload, headers=headers)\n\treturn response.text\n`}
+              text={`import requests\n\ndef send_request(repo_url, tone, description, github_token, api_key):\n\tendpoint = "https://manual-lina-none-new.koyeb.app/create_readme"\n\theaders = {\n\t\t"Content-Type": "application/json",\n\t\t'Authorization': f'Bearer {api_key}'\n\t}\n\tpayload = {\n\t\t"repo_url": repo_url,\n\t\t"tone": tone,\n\t\t"description": description,\n\t\t"github_token": github_token,\n\t}\n\tresponse = requests.post(endpoint, files=payload, headers=headers)\n\treturn response.text\n`}
             >
               <button className="absolute top-2 right-2 bg-gray-200 text-gray-600 px-2 py-1 rounded-md hover:bg-gray-300">
                 Copy
@@ -128,7 +128,7 @@ import requests
 
 def send_request(code, api_key):
   
-  endpoint = "http://127.0.0.1:5000/analyse_code"
+  endpoint = "https://manual-lina-none-new.koyeb.app/analyse_code"
 
   headers = {
     "Content-Type": "application/json",
@@ -145,7 +145,7 @@ output = send_request(code="code here", api_key="api key here")
 `}
             </code>
             <CopyToClipboard
-              text={`import requests\n\ndef send_request(code, api_key):\n  endpoint = "http://127.0.0.1:5000/analyse_code"\n  headers = {\n    "Content-Type": "application/json",\n    'Authorization': f'Bearer {api_key}'\n  }\n  payload = {\n    "code": code,\n  }\n  response = requests.post(endpoint, files=payload, headers=headers)\n  return response.text\n`}
+              text={`import requests\n\ndef send_request(code, api_key):\n  endpoint = "https://manual-lina-none-new.koyeb.app/analyse_code"\n  headers = {\n    "Content-Type": "application/json",\n    'Authorization': f'Bearer {api_key}'\n  }\n  payload = {\n    "code": code,\n  }\n  response = requests.post(endpoint, files=payload, headers=headers)\n  return response.text\n`}
             >
               <button className="absolute top-2 right-2 bg-gray-200 text-gray-600 px-2 py-1 rounded-md hover:bg-gray-300">
                 Copy
@@ -165,7 +165,7 @@ output = send_request(code="code here", api_key="api key here")
           <p className="mb-4">
             Our API is available at{" "}
             <code className="bg-gray-100 p-1 rounded-md">
-              http://127.0.0.1/get_social_media_post
+              https://manual-lina-none-new.koyeb.app/get_social_media_post
             </code>
             .
           </p>
@@ -186,7 +186,7 @@ import requests
 
 def send_request(repo_url, tone, github_token, description, api_key):
   
-  endpoint = "http://127.0.0.1:5000/analyse_code"
+  endpoint = "https://manual-lina-none-new.koyeb.app/analyse_code"
 
   headers = {
     "Content-Type": "application/json",
@@ -206,7 +206,7 @@ output = send_request(repo_url="url", tone="formal", github_token="token here", 
 `}
             </code>
             <CopyToClipboard
-              text={`import requests\n\ndef send_request(repo_url, tone, github_token, description, api_key):\n  endpoint = "http://127.0.0.1:5000/analyse_code"\n  headers = {\n    "Content-Type": "application/json",\n    'Authorization': f'Bearer {api_key}'\n  }\n  payload = {\n    "repo_url": repo_url,\n    "tone": tone,\n    "github_token": github_token,\n    "description": description\n  }\n  response = requests.post(endpoint, files=payload, headers=headers)\n  return response.text\n`}
+              text={`import requests\n\ndef send_request(repo_url, tone, github_token, description, api_key):\n  endpoint = "https://manual-lina-none-new.koyeb.app/analyse_code"\n  headers = {\n    "Content-Type": "application/json",\n    'Authorization': f'Bearer {api_key}'\n  }\n  payload = {\n    "repo_url": repo_url,\n    "tone": tone,\n    "github_token": github_token,\n    "description": description\n  }\n  response = requests.post(endpoint, files=payload, headers=headers)\n  return response.text\n`}
             >
               <button className="absolute top-2 right-2 bg-gray-200 text-gray-600 px-2 py-1 rounded-md hover:bg-gray-300">
                 Copy
